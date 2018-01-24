@@ -1,0 +1,16 @@
+--集計選択情報テーブル
+DROP TABLE sgsu_temp_gomi;
+CREATE TABLE sgsu_temp_gomi (
+INDEX_CD	number(6),
+age				number(6),
+name			VARCHAR2(6),
+pay				number(12,5),
+birthday 	VARCHAR2(24),
+	constraint sgsu_temp_gomi primary key
+	(INDEX_CD)
+);
+
+insert into sgsu_temp_gomi(INDEX_CD,age,name,pay,birthday) values(1,20,'chin',123.6,'2001-12-13');
+insert into sgsu_temp_gomi(INDEX_CD,age,name,pay,birthday) values(2,30,'shou',323.68,'2002-11-16');
+insert into sgsu_temp_gomi(INDEX_CD,age,name,pay,birthday) values(3,66,'fang',423.698,'2003-10-17');
+insert into sgsu_temp_gomi(INDEX_CD,age,name,pay,birthday) values(4,26,'bin',263.34,'2004-09-19');
